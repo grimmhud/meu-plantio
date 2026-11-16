@@ -26,6 +26,8 @@ Este repositório reúne a **landing page e o aplicativo**, em uma única aplica
 
 O botão **Explore the demo** abre `/app` no mesmo domínio. Os links Home do app e o início da instalação PWA também apontam para `/app`. As outras telas mantêm os caminhos indicados acima.
 
+O rodapé da apresentação inclui **View source on GitHub**, que abre este repositório público em uma nova aba.
+
 ## Por que existe
 
 Planejar o próximo cultivo envolve clima, água, histórico da área, tempo e orçamento. Essas informações costumam chegar separadas. Mudanças nos padrões de chuva e temperatura, incluindo efeitos regionais do El Niño, aumentam a necessidade de revisar decisões.

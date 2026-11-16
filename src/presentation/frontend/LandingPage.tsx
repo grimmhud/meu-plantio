@@ -870,6 +870,16 @@ export function LandingPage() {
                 <br />
                 Decisions in every farmer’s hands.
               </p>
+              <p>
+                <a
+                  href="https://github.com/grimmhud/meu-plantio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View source on GitHub (opens in a new tab)"
+                >
+                  View source on GitHub ↗
+                </a>
+              </p>
             </div>
             <div className="footer-event">
               <img
