@@ -10,6 +10,8 @@ Este repositório reúne a **landing page e o aplicativo**, em uma única aplica
 
 ## Conheça o projeto
 
+**Online:** [Apresentação](https://meu-plantio-one.vercel.app/) · [Aplicativo](https://meu-plantio-one.vercel.app/app) · [Pitch](https://meu-plantio-one.vercel.app/#pitch)
+
 | Caminho | Conteúdo |
 | --- | --- |
 | `/` | Landing page: problema, persona, proposta, dados, voz e impacto |
@@ -102,6 +104,13 @@ Grupos entre parênteses não aparecem na URL. Layouts raiz separados preservam 
 Importe **grimmhud/meu-plantio**, selecione **Next.js**, diretório raiz do repositório e Node.js 22. Build: `npm run build`. Mantenha a saída padrão do Next.js.
 
 Este projeto inclui endpoints de servidor: **não use exportação estática**. Landing e app são publicados juntos, sem depender da URL antiga. Configure `DEMO_MODE=true` em Production para abrir preenchido na apresentação do evento.
+
+A publicação atual foi feita pela CLI autenticada no projeto `meu-plantio`, da equipe `hudson-oliveiras-projects`. A conexão automática com GitHub ainda não está habilitada: novos pushes não publicam sozinhos. Para atualizar manualmente com acesso à equipe:
+
+```bash
+npx vercel link --project meu-plantio --scope hudson-oliveiras-projects
+npx vercel deploy --prod --scope hudson-oliveiras-projects
+```
 
 ## Evidências e fontes
 
