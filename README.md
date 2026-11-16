@@ -2,7 +2,7 @@
 
 **Bringing Earth data closer to the people who grow our food.**
 
-A conceptual project created by team **IAGORA** during the remote **[NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/challenges/field-shift-adapting-farms-with-nasa-data/)** hackathon to present an accessible approach to vegetable crop rotation planning. Meu plantio aims to support small vegetable growers by connecting environmental information, plot history and farmer choices through illustrations and audio.
+A conceptual project created by team **IAGORA** during the remote **[NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/challenges/adapting-farms-with-nasa-data/)** hackathon to present an accessible approach to vegetable crop rotation planning. Meu plantio aims to support small vegetable growers by connecting environmental information, plot history and farmer choices through illustrations and audio.
 
 This repository brings together the **landing page and application** in a single Next.js project. The interface and pitch are in English. The demonstration combines implemented features and illustrative scenarios; it is not a validated agronomic solution or an official NASA product.
 
