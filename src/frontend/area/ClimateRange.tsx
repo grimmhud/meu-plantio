@@ -1,0 +1,15 @@
+import { ExplainButton } from "@/frontend/ui/ExplainButton";
+import { Target,CalendarDays,History } from "lucide-react";
+import styles from "./next-cycles.module.css";
+export type Range = {low:number;high:number}|null;
+/** Every row shares one linear scale and the same displayed unit. Missing is never zero. */
+export function ClimateRange({reference,future,history,unit,referenceLabel="Reference",explanations}:{reference:Range;future:Range;history:Range;unit:string;referenceLabel?:string;explanations?:{reference:string;future:string;history:string}}){
+ const all=[reference,future,history].filter((r):r is NonNullable<Range>=>!!r);
+ const low=Math.min(0,...all.map(r=>r.low));const high=Math.max(1,...all.map(r=>r.high));
+ const position=(v:number)=>12+((v-low)/(high-low))*256;
+ const format=(v:number)=>v.toFixed(1);
+ const defaultExplanations={reference:"Reference temperature range for this vegetable. Check the variety and crop stage. This is not planting approval.",future:"Lowest and highest forecast daily average temperatures for the next seven days, from Open-Meteo. These are not each day’s lows and highs. A dot means equal values; a dotted line means missing data.",history:"Lowest and highest daily average temperatures for this season from 2021 to 2025 at the NASA regional reference point. This is past data, not a forecast. It does not measure your bed."};
+ const info=explanations??defaultExplanations;
+ const rows=[{label:referenceLabel,range:reference,Icon:Target,color:"var(--color-brand)",kind:"reference"},{label:"Forecast · 7 days",range:future,Icon:CalendarDays,color:"#356681",kind:"future"},{label:"NASA · 2021–2025",range:history,Icon:History,color:"#886000",kind:"history"}];
+ return <div className={styles.visualRanges}>{rows.map(({label,range,Icon,color,kind})=><div className={styles.visualRangeRow} key={kind}><div><Icon size={20} aria-hidden="true"/><span>{label}</span><ExplainButton title={label} text={info[kind as keyof typeof info]}/><strong>{range?Math.abs(range.high-range.low)<.05?`${format(range.low)}`:`${format(range.low)}–${format(range.high)}`:"?"}</strong></div><svg viewBox="0 0 280 26" role="img" aria-label={range?`${label}: ${format(range.low)} to ${format(range.high)} ${unit}`:`${label}: no value assessed`}><line x1="12" x2="268" y1="13" y2="13" stroke="var(--color-border)" strokeWidth="8" strokeLinecap="round"/>{range?<><line x1={position(range.low)} x2={position(range.high)} y1="13" y2="13" stroke={color} strokeWidth="10" strokeLinecap="round"/><circle cx={position(range.low)} cy="13" r="5" fill={color}/><circle cx={position(range.high)} cy="13" r="5" fill={color}/></>:<line x1="12" x2="268" y1="13" y2="13" stroke="var(--color-muted)" strokeWidth="2" strokeDasharray="3 7"/>}{kind!=="reference"&&reference&&<>{[reference.low,reference.high].map((v,i)=><line key={i} x1={position(v)} x2={position(v)} y1="1" y2="25" stroke="var(--color-brand)" strokeWidth="2" strokeDasharray="3 2"/>)}</>}</svg></div>)}<span className={styles.unitLabel}>{unit}</span></div>;
+}

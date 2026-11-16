@@ -1,0 +1,27 @@
+:root {
+  --color-page: #f6f6ee;
+  --color-surface: #fffef8;
+  --color-ink: #243c2e;
+  --color-muted: #66705f;
+  --color-brand: #254f3a;
+  --color-brand-dark: #193c2b;
+  --color-brand-soft: #e8eedc;
+  --color-lime: #dce8ac;
+  --color-border: #dce0d2;
+  --color-weather: #f6ecd5;
+  --color-weather-border: #e2d6b7;
+  --color-weather-ink: #674f2e;
+  --radius-sm: 12px;
+  --radius-card: 22px;
+  --radius-button: 16px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --touch-min: 48px;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-display: "Trebuchet MS", Arial, sans-serif;
+}

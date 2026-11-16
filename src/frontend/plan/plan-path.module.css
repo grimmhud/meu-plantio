@@ -1,0 +1,279 @@
+.path {
+  margin-top: var(--space-3);
+}
+
+.headingAction {
+  width: auto;
+  min-height: 48px;
+  padding: 8px 12px;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.stageSupport {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.stageButton {
+  width: auto;
+  justify-self: start;
+  min-height: 44px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.exampleLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 0 0 var(--space-3);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  background: var(--color-brand-soft);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.exampleRemove {
+  width: auto;
+  min-height: 36px;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+.exampleControl {
+  width: auto;
+  min-height: 44px;
+  margin-top: var(--space-2);
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 11px;
+}
+
+.stage {
+  position: relative;
+  margin-left: 8px;
+  padding: 0 0 var(--space-4) 23px;
+  border-left: 2px solid transparent;
+}
+
+.stage::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 31px;
+  bottom: -31px;
+  border-left: 2px solid var(--color-border);
+}
+
+.stage:last-child::before {
+  display: none;
+}
+
+.stage:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.marker {
+  position: absolute;
+  top: 25px;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid var(--color-page);
+  border-radius: 50%;
+  background: var(--color-muted);
+}
+
+.currentMarker {
+  background: var(--color-brand);
+}
+
+.stageCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 78px;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+}
+
+.stageCard > svg {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+}
+
+.unknownCrop {
+  display: grid;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stageText {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stageText small,
+.stageText > span {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.stageText strong {
+  color: var(--color-ink);
+  font-size: 18px;
+}
+
+.issues {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.issueStage {
+  padding-top: 2px;
+  padding-bottom: var(--space-3);
+}
+
+.alertMarker {
+  top: 18px;
+  background: var(--color-weather-ink);
+}
+
+.issue {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.climateIssue {
+  border-color: var(--color-weather-border);
+  background: var(--color-weather);
+}
+
+.soilIssue {
+  background: var(--color-brand-soft);
+}
+
+.issueSummary {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 7px;
+  min-height: 54px;
+  padding: 6px 9px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.issueSummary::-webkit-details-marker {
+  display: none;
+}
+
+.issueSummary > svg {
+  color: var(--color-muted);
+}
+
+.issueIcon {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-page);
+  color: var(--color-ink);
+}
+
+.issueHeading {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.issueHeading strong {
+  color: var(--color-ink);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.issueHeading small {
+  color: var(--color-muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.issueBody {
+  padding: 0 10px 9px 42px;
+}
+
+.issueBody > p {
+  margin: 3px 0 6px;
+  color: var(--color-ink);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.issueBody .issueLimit {
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 10px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.actions a {
+  width: auto;
+  min-height: 40px;
+  padding: 5px 6px;
+  font-size: 13px;
+}
+
+.actions :global(.listen-inline) {
+  min-height: 40px;
+  padding: 3px 0;
+  font-size: 13px;
+}
+
+@media (max-width: 360px) {
+  .actions {
+    justify-content: flex-start;
+  }
+
+  .issueBody {
+    padding-left: 10px;
+  }
+}

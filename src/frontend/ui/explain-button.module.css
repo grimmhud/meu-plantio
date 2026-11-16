@@ -1,0 +1,4 @@
+.trigger { display:inline-flex; align-items:center; justify-content:center; flex:0 0 44px; width:44px; height:44px; padding:0; border:0; border-radius:50%; background:transparent; color:var(--color-brand); cursor:pointer; }
+.trigger:hover { background:var(--color-brand-soft); }
+.trigger:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; }
+.text { font-size:18px; line-height:1.6; margin:20px 0 28px; }

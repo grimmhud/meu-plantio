@@ -1,0 +1,22 @@
+# Dependências e saídas geradas
+/node_modules/
+/.next/
+/out/
+/build/
+/dist/
+/coverage/
+/.vercel/
+
+# Configuração local e segredos
+.env*
+!.env.example
+
+# Protótipo de referência, mantido apenas localmente
+/.mock/
+/.locals/
+
+# Arquivos temporários e do sistema
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

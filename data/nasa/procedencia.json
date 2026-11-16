@@ -1,0 +1,10 @@
+{
+  "source": "NASA POWER",
+  "requestedPoint": {
+    "latitude": -23.52278,
+    "longitude": -46.18833
+  },
+  "acquiredOn": "2026-11-15",
+  "sha256": "fb99bc2ef4808428a25f74ed42aaca3cf562b30323705e00dd49e18b8baa4dc9",
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,T2M_MIN,T2M_MAX,PRECTOTCORR&community=AG&longitude=-46.18833&latitude=-23.52278&start=20210101&end=20251231&format=JSON&time-standard=UTC"
+}

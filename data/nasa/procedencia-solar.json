@@ -1,0 +1,6 @@
+{
+  "source": "NASA POWER",
+  "acquiredOn": "2026-11-15",
+  "sha256": "b2c200a5709e437cdaab7b8096b42b7c1b62012c84db7896b9002f87dd3185e8",
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN&community=AG&longitude=-46.18833&latitude=-23.52278&start=20210101&end=20251231&format=JSON&time-standard=UTC"
+}

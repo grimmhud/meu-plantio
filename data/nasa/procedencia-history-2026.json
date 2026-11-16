@@ -1,0 +1,12 @@
+{
+  "source": "NASA POWER",
+  "acquiredOn": "2026-11-15",
+  "timeStandard": "UTC",
+  "requestedPoint": {
+    "latitude": -23.52278,
+    "longitude": -46.18833
+  },
+  "sha256": "23e7572422cd2a53bd50ee0d26fc5090b88af00079c03556a047f264c3f4d932",
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,T2M_MIN,T2M_MAX,PRECTOTCORR&community=AG&longitude=-46.18833&latitude=-23.52278&start=20260101&end=20261114&format=JSON&time-standard=UTC",
+  "note": "Requested through Nov 14; valid values through Nov 13. Missing values remain absent."
+}

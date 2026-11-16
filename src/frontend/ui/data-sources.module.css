@@ -1,0 +1,36 @@
+.root { margin-top:28px; padding-top:20px; border-top:1px solid var(--color-border); text-align:left; }
+.credit { display:flex; align-items:center; gap:16px; width:100%; padding:24px 18px; border:0; border-radius:var(--radius-card); color:#fff; background:#142d4c; font:inherit; cursor:pointer; text-align:left; }
+.credit:focus-visible,.secondary:focus-visible { outline:3px solid var(--color-brand); outline-offset:4px; }
+.earth { display:flex; align-items:center; justify-content:center; width:64px; height:64px; flex:0 0 64px; border:1px solid #7894b6; border-radius:50%; background:#203e5f; color:#e4edf5; }
+.identity { display:grid; gap:5px; min-width:0; flex:1; }
+.identity strong { font-size:32px; line-height:1; letter-spacing:2px; }
+.identity > span:last-child { font-size:12px; color:#d2dfed; line-height:1.5; }
+.kicker { font-size:10px; font-weight:bold; letter-spacing:2px; }
+.credit > svg { flex-shrink:0; }
+.secondary { display:flex; align-items:center; gap:8px; width:100%; min-height:48px; margin-top:8px; padding:8px 4px; border:0; background:transparent; color:var(--color-muted); font:inherit; font-size:12px; cursor:pointer; text-align:left; }
+.secondary > span:last-child { margin-left:auto; }
+.primaryInfo { padding:24px; margin:12px 0 20px; border-radius:var(--radius-card); color:#fff; background:#142d4c; }
+.primaryInfo > svg { display:block; margin-bottom:16px; }
+.primaryInfo h3 { font-size:34px; letter-spacing:2px; margin:8px 0 12px; }
+.primaryInfo p { line-height:1.5; }
+.primaryInfo a { color:#fff; display:inline-flex; align-items:center; gap:8px; min-height:44px; }
+.source { margin:20px 0; padding:16px 0; border-bottom:1px solid var(--color-border); }
+.source h3 { font-size:20px; margin:8px 0; }
+.source p { line-height:1.5; }
+.details { margin:20px 0; }
+.details summary { display:flex; align-items:center; gap:10px; min-height:48px; cursor:pointer; font-weight:bold; }
+.details p { line-height:1.6; }
+
+.root { margin-top:18px; padding-top:12px; }
+.credit { gap:10px; padding:12px; background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); }
+.earth { width:52px; height:48px; flex-basis:52px; border:0; border-radius:0; background:transparent; }
+.earth img { display:block; width:48px; height:40px; object-fit:contain; }
+.identity strong { font-size:18px; letter-spacing:1px; }
+.identity .kicker { font-size:9px; letter-spacing:1.5px; }
+.identity > span:last-child { font-size:11px; color:var(--color-muted); }
+.credit > svg { width:18px; height:18px; color:var(--color-muted); }
+.secondary { min-height:40px; margin-top:2px; }
+.primaryInfo { padding:16px; background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); }
+.primaryInfo h3 { font-size:22px; }
+.primaryInfo img { display:block; object-fit:contain; margin-bottom:12px; }
+.primaryInfo a { color:var(--color-brand); }
