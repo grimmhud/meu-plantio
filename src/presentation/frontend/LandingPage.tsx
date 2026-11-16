@@ -9,6 +9,7 @@ import {
   Check,
   ChevronDown,
   Droplets,
+  Github,
   Leaf,
   Menu,
   Phone,
@@ -93,6 +94,9 @@ export function LandingPage() {
             <a href="#pitch" onClick={() => setMenuOpen(false)}>
               The pitch
             </a>
+            <a href="https://github.com/grimmhud/meu-plantio" target="_blank" rel="noopener noreferrer">
+              GitHub ↗
+            </a>
           </nav>
           <a
             className="header-demo"
@@ -132,6 +136,9 @@ export function LandingPage() {
           <a href={DEMO} target="_blank" rel="noreferrer">
             Explore the demo ↗
           </a>
+          <a href="https://github.com/grimmhud/meu-plantio" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>
+            GitHub ↗
+          </a>
         </div>
       </header>
       <main id="main">
@@ -158,6 +165,14 @@ export function LandingPage() {
                 rel="noreferrer"
               >
                 Explore the demo <ArrowUpRight size={20} />
+              </a>
+              <a
+                className="button button-secondary"
+                href="https://github.com/grimmhud/meu-plantio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={20} aria-hidden="true" /> View on GitHub <ArrowUpRight size={20} aria-hidden="true" />
               </a>
               <a className="watch-button" href="#pitch">
                 <span className="play-circle">

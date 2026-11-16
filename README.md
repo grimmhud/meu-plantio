@@ -26,7 +26,7 @@ Este repositório reúne a **landing page e o aplicativo**, em uma única aplica
 
 O botão **Explore the demo** abre `/app` no mesmo domínio. Os links Home do app e o início da instalação PWA também apontam para `/app`. As outras telas mantêm os caminhos indicados acima.
 
-O rodapé da apresentação inclui **View source on GitHub**, que abre este repositório público em uma nova aba.
+O repositório público aparece no menu do topo (também no celular), no botão **View on GitHub** ao lado de **Explore the demo** e no rodapé. Os links abrem em uma nova aba.
 
 ## Por que existe
 
