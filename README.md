@@ -1,58 +1,58 @@
 # Meu plantio 🌱
 
-**Dados da Terra mais próximos de quem cultiva nossos alimentos.**
+**Bringing Earth data closer to the people who grow our food.**
 
-Projeto da equipe **IAGORA** para o **NASA Space Apps Challenge 2026**. O Meu plantio propõe apoiar pequenos produtores de hortaliças no planejamento de rotações, conectando informações ambientais, histórico do canteiro e escolhas do agricultor por meio de ilustrações e áudio.
+A conceptual project created by team **IAGORA** during the remote **[NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/challenges/field-shift-adapting-farms-with-nasa-data/)** hackathon to present an accessible approach to vegetable crop rotation planning. Meu plantio aims to support small vegetable growers by connecting environmental information, plot history and farmer choices through illustrations and audio.
 
-Este repositório reúne a **landing page e o aplicativo**, em uma única aplicação Next.js. A interface e o pitch estão em inglês.
+This repository brings together the **landing page and application** in a single Next.js project. The interface and pitch are in English. The demonstration combines implemented features and illustrative scenarios; it is not a validated agronomic solution or an official NASA product.
 
 ![Meu plantio](public/media/pitch-poster.png)
 
-## Conheça o projeto
+## Explore the project
 
-**Online:** [Apresentação](https://meu-plantio-one.vercel.app/) · [Aplicativo](https://meu-plantio-one.vercel.app/app) · [Pitch](https://meu-plantio-one.vercel.app/#pitch)
+**Online:** [Presentation](https://meu-plantio-one.vercel.app/) · [Application](https://meu-plantio-one.vercel.app/app) · [Pitch](https://meu-plantio-one.vercel.app/#pitch)
 
-| Caminho | Conteúdo |
+| Path | Content |
 | --- | --- |
-| `/` | Landing page: problema, persona, proposta, dados, voz e impacto |
-| `/#pitch` | Pitch de 30 segundos, com narração em inglês |
-| `/#team` | Equipe IAGORA e links para o LinkedIn |
-| `/app` | Início do aplicativo |
-| `/plan` | Planejar rotação |
-| `/my-plan` | Meu plano |
-| `/notices` | Alertas e conversas |
-| `/my-area` | Minha área e histórico |
-| `/design-system` | Catálogo de desenvolvimento com componentes reais |
+| `/` | Landing page: problem, persona, proposal, data, voice and impact |
+| `/#pitch` | 30-second pitch with English narration |
+| `/#team` | Team IAGORA and LinkedIn profiles |
+| `/app` | Application home |
+| `/plan` | Plan crop rotation |
+| `/my-plan` | My plan |
+| `/notices` | Alerts and conversations |
+| `/my-area` | My area and history |
+| `/design-system` | Development catalog using the actual components |
 
-O botão **Explore the demo** abre `/app` no mesmo domínio. Os links Home do app e o início da instalação PWA também apontam para `/app`. As outras telas mantêm os caminhos indicados acima.
+The **Explore the demo** button opens `/app` on the same domain. The application's Home links and PWA launch URL also point to `/app`. Other screens keep the paths listed above.
 
-O repositório público aparece no menu do topo (também no celular), no botão **View on GitHub** ao lado de **Explore the demo** e no rodapé. Os links abrem em uma nova aba.
+The public repository is linked in the top menu (including on mobile), through the **View on GitHub** button next to **Explore the demo**, and in the footer. These links open in a new tab.
 
-## Por que existe
+## Why it exists
 
-Planejar o próximo cultivo envolve clima, água, histórico da área, tempo e orçamento. Essas informações costumam chegar separadas. Mudanças nos padrões de chuva e temperatura, incluindo efeitos regionais do El Niño, aumentam a necessidade de revisar decisões.
+Planning the next crop involves weather, water, plot history, time and budget. This information often comes from separate sources. Changes in rainfall and temperature patterns, including regional effects of El Niño, increase the need to review decisions.
 
-A proposta considera barreiras de leitura e acesso à informação. Imagens, linguagem simples e áudio ajudam a tornar a decisão compreensível. O produtor mantém o controle: pode confirmar, corrigir, recusar ou adiar.
+The proposal considers barriers to reading and accessing information. Images, plain language and audio help make decisions understandable. Farmers remain in control: they can confirm, correct, decline or postpone.
 
-## Implementação e limites
+## Implementation and limitations
 
-| Recurso | Estado |
+| Feature | Status |
 | --- | --- |
-| Landing page | Responsiva, com pitch, fontes, equipe e acesso ao app |
-| Planejamento e acompanhamento | Telas conectadas pelo `FarmProvider`, separando cultivo atual e próximo cultivo |
-| Registros e escolhas | Persistência local no navegador, sem sincronização de servidor |
-| Histórico climático | NASA POWER regional de 2021–2025; não é sensor do canteiro nem previsão sazonal |
-| Previsão de sete dias | Open-Meteo, com fonte, horário e validade; depende do serviço externo |
-| Voz | Síntese do navegador, acionada pelo usuário; vozes e disponibilidade dependem do dispositivo |
-| Predição da rotação completa | Visão central em desenvolvimento; comparação agronômica e resultados locais exigem validação |
-| Ligação contextual | Fluxo proposto: alerta → solicitação → conversa → confirmação → resumo em áudio. Telefonia ainda indisponível |
-| Instalação PWA | Manifesto e ícones preparados; interface completa offline ainda não implementada |
+| Landing page | Responsive, with pitch, sources, team and access to the app |
+| Planning and monitoring | Screens connected through `FarmProvider`, keeping the current crop separate from the next crop |
+| Records and choices | Stored locally in the browser, without server synchronization |
+| Climate history | Regional NASA POWER data for 2021–2025; neither a plot sensor nor a seasonal forecast |
+| Seven-day forecast | Open-Meteo, with source, timestamp and validity; depends on the external service |
+| Voice | User-triggered browser speech synthesis; voices and availability depend on the device |
+| Full rotation prediction | Core vision under development; agronomic comparisons and local outcomes require validation |
+| Contextual phone call | Proposed flow: alert → request → conversation → confirmation → audio summary. Telephony is not yet available |
+| PWA installation | Manifest and icons prepared; full offline access is not yet implemented |
 
-Redução de desperdício, economia de água, produtividade e recuperação do solo são **objetivos a medir**, não resultados comprovados. Capturas e demonstração podem conter registros e planos de exemplo, identificados na interface.
+Waste reduction, water savings, productivity and soil recovery are **goals to measure**, not proven results. Screenshots and the demonstration may contain sample records and plans, labeled in the interface.
 
-## Rodar localmente
+## Run locally
 
-Requisitos: **Node.js 22** recomendado (mínimo 20.9) e npm.
+Requirements: **Node.js 22** recommended (minimum 20.9) and npm.
 
 ```bash
 git clone https://github.com/grimmhud/meu-plantio.git
@@ -61,15 +61,15 @@ npm ci
 npm run dev
 ```
 
-Apresentação: **http://localhost:3018/**. Aplicativo: **http://localhost:3018/app**.
+Presentation: **http://localhost:3018/**. Application: **http://localhost:3018/app**.
 
-Não é necessária chave de API para as fontes públicas atuais. Para abrir com os exemplos da demonstração preenchidos, crie `.env.local` e reinicie o servidor:
+No API key is required for the current public data sources. To start with the demonstration examples populated, create `.env.local` and restart the server:
 
 ```dotenv
 DEMO_MODE=true
 ```
 
-O modo de demonstração usa armazenamento separado (`agroloop:demo:*`), preservando registros normais (`agroloop:*`). Previews da Vercel também ativam esse modo. Sem a configuração, desenvolvimento e produção usam o modo normal.
+Demo mode uses separate storage (`agroloop:demo:*`), preserving normal records (`agroloop:*`). Vercel previews also enable this mode. Without this setting, development and production use normal mode.
 
 ```bash
 npm test
@@ -78,54 +78,54 @@ npm run build
 npm start
 ```
 
-O servidor de produção local também usa a porta 3018. Execute apenas um servidor por vez nessa porta.
+The local production server also uses port 3018. Run only one server at a time on that port.
 
-## Estrutura
+## Structure
 
 ```text
-src/app/(presentation)/  Landing e layout próprios
-src/app/(producer)/      Telas, layout e FarmProvider do app
-src/app/api/             Endpoints de clima e conversa
-src/app/manifest.ts      Instalação PWA, com início em /app
-src/presentation/        Conteúdo, estilos e componentes da landing
-src/frontend/            Interface e estado do produtor
-src/backend/             Integrações e lógica de servidor
-src/shared/              Contratos e regras compartilhadas
-public/media/            Pitch, capturas e ilustrações
-public/team/             Fotos dos integrantes
-public/brands/           Marca e identidade do evento
-data/nasa/               Séries e registros de procedência
-docs/                    Produto, evidências e decisões
-tests/                   Verificações das regras implementadas
+src/app/(presentation)/  Landing page and its layouts
+src/app/(producer)/      App screens, layouts and FarmProvider
+src/app/api/             Weather and conversation endpoints
+src/app/manifest.ts      PWA installation, starting at /app
+src/presentation/        Landing content, styles and components
+src/frontend/            Farmer interface and state
+src/backend/             Integrations and server logic
+src/shared/              Shared contracts and rules
+public/media/            Pitch, screenshots and illustrations
+public/team/             Team member photos
+public/brands/           Product branding and event identity
+data/nasa/               Data series and provenance records
+docs/                    Product, evidence and decisions
+tests/                   Checks for implemented rules
 ```
 
-Grupos entre parênteses não aparecem na URL. Layouts raiz separados preservam os estilos e o estado de cada experiência. A navegação entre landing e app recarrega a página; escolhas do produtor permanecem no armazenamento local.
+Route groups in parentheses do not appear in URLs. Separate root layouts preserve each experience's styles and state. Navigating between the landing page and the app reloads the page; farmer choices remain in local storage.
 
-## Publicar na Vercel
+## Deploy to Vercel
 
-Importe **grimmhud/meu-plantio**, selecione **Next.js**, diretório raiz do repositório e Node.js 22. Build: `npm run build`. Mantenha a saída padrão do Next.js.
+Import **grimmhud/meu-plantio**, select **Next.js**, use the repository root directory and Node.js 22. Build command: `npm run build`. Keep the default Next.js output settings.
 
-Este projeto inclui endpoints de servidor: **não use exportação estática**. Landing e app são publicados juntos, sem depender da URL antiga. Configure `DEMO_MODE=true` em Production para abrir preenchido na apresentação do evento.
+This project includes server endpoints: **do not use static export**. The landing page and app deploy together, without depending on the old URL. Set `DEMO_MODE=true` in Production to populate examples for the event presentation.
 
-A publicação atual foi feita pela CLI autenticada no projeto `meu-plantio`, da equipe `hudson-oliveiras-projects`. A conexão automática com GitHub ainda não está habilitada: novos pushes não publicam sozinhos. Para atualizar manualmente com acesso à equipe:
+The current deployment was made through the authenticated CLI in the `meu-plantio` project under the `hudson-oliveiras-projects` team. Automatic GitHub deployment is not yet enabled: new pushes do not deploy automatically. To update manually with access to the team:
 
 ```bash
 npx vercel link --project meu-plantio --scope hudson-oliveiras-projects
 npx vercel deploy --prod --scope hudson-oliveiras-projects
 ```
 
-## Evidências e fontes
+## Evidence and sources
 
-- [IBGE — Censo Agropecuário 2017](https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/25786-em-11-anos-agricultura-familiar-perde-9-5-dos-estabelecimentos-e-2-2-milhoes-de-postos-de-trabalho): aproximadamente 3,9 milhões de estabelecimentos familiares, 77% dos estabelecimentos brasileiros em 2017. Contexto nacional histórico, não contagem local de horticultores.
-- [Ipea — capítulo 6, tabela 7, p. 269](https://repositorio.ipea.gov.br/bitstream/11058/14052/6/Agricultura%20familiar_Cap6.pdf#page=34): 26,4% dos produtores familiares não sabiam ler e escrever, com base em 2017. Não é estimativa atual nem percentual específico de Mogi das Cruzes.
-- [NASA POWER](https://power.larc.nasa.gov/): histórico regional de temperatura, chuva e radiação. Procedência em `data/nasa/`.
-- [Open-Meteo](https://open-meteo.com/): previsão meteorológica de sete dias, distinta do histórico NASA.
-- [INPE — El Niño em 2026](https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/nota-tecnica-conjunta-aponta-alta-probabilidade-de-el-nino-no-segundo-semestre-de-2026): efeitos dependem da região e do evento.
-- [NASA Space Apps — materiais de marca](https://www.spaceappschallenge.org/brand/): identidade oficial do evento. Participação e uso de dados não representam endosso da NASA ao produto.
+- [IBGE — 2017 Agricultural Census](https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/25786-em-11-anos-agricultura-familiar-perde-9-5-dos-estabelecimentos-e-2-2-milhoes-de-postos-de-trabalho): approximately 3.9 million family farming establishments, representing 77% of Brazilian establishments in 2017. Historical national context, not a local count of vegetable growers.
+- [Ipea — chapter 6, table 7, p. 269](https://repositorio.ipea.gov.br/bitstream/11058/14052/6/Agricultura%20familiar_Cap6.pdf#page=34): 26.4% of family farmers could not read or write, based on 2017 data. This is neither a current estimate nor a percentage specific to Mogi das Cruzes.
+- [NASA POWER](https://power.larc.nasa.gov/): regional temperature, rainfall and radiation history. Provenance records in `data/nasa/`.
+- [Open-Meteo](https://open-meteo.com/): seven-day weather forecast, separate from NASA historical data.
+- [INPE — El Niño in 2026](https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/nota-tecnica-conjunta-aponta-alta-probabilidade-de-el-nino-no-segundo-semestre-de-2026): effects depend on the region and event.
+- [NASA Space Apps — brand assets](https://www.spaceappschallenge.org/brand/): official event identity. Participation and use of data do not imply NASA endorsement of the product.
 
-## Equipe IAGORA
+## Team IAGORA
 
-| Integrante | LinkedIn |
+| Member | LinkedIn |
 | --- | --- |
 | Hudson Oliveira | [grimmhud](https://www.linkedin.com/in/grimmhud/?locale=en) |
 | Joana Carolina | [joanacarol](https://www.linkedin.com/in/joanacarol/) |
@@ -134,13 +134,13 @@ npx vercel deploy --prod --scope hudson-oliveiras-projects
 | Luís Garcês | [luisgarces2005](https://www.linkedin.com/in/luisgarces2005/) |
 | Ingrid Lorena | [ingrid-lorena](https://www.linkedin.com/in/ingrid-lorena/) |
 
-## Documentação e licença
+## Documentation and license
 
-- [Produto](docs/product-definition.md): referência local congelada; inclui capacidades futuras.
-- [Conteúdo e decisões atuais](docs/content.md).
+- [Product definition](docs/product-definition.md): frozen local reference; includes future capabilities.
+- [Content and current decisions](docs/content.md).
 - [Design system](docs/design-system.md).
-- [Continuidade e estado compartilhado](docs/continuidade.md).
-- [Áudio e limites](docs/audio.md).
-- [Notas de origem da landing](docs/presentation.md): registro anterior à integração neste repositório.
+- [Continuity and shared state](docs/continuidade.md).
+- [Audio and limitations](docs/audio.md).
+- [Landing page origin notes](docs/presentation.md): record from before integration into this repository.
 
-Código sob [Apache License 2.0](LICENSE), preservando a licença existente. Fotos e marcas de terceiros mantêm os direitos dos respectivos titulares; a licença de código não concede direitos sobre esses materiais.
+Code is licensed under the [Apache License 2.0](LICENSE), preserving the existing license. Third-party photos and trademarks remain subject to their respective owners' rights; the code license does not grant rights to those materials.
